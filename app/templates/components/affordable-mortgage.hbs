@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row center">
+    <h3 class="header col s12 light grey-text text-lighten-5">
+      <i class="fa fa-bullseye"></i>Target House Price
+    </h3>
+  </div>
+  <div class="center white-text">
+    <div class="input-field">
+      {{md-select content=paymentSchedule
+                  prompt="How often do you get paid?"
+                  optionValuePath="content.id"
+                  optionLabelPath="content.freqName"
+                  class="input-field"
+                  value=selectedFreq.id}}
+    </div>
+    <div class="row">
+      {{md-input value=income label='Average Paycheck Amount?' class="col s12" icon="fa fa-usd"}}
+    </div>
+    <div class="row">
+      {{md-input value=saved label='Money already saved?' class="col s12" icon="fa fa-usd"}}
+    </div>
+  </div>
+  <div class="row center">
+    <h3 class="center white-text">
+      <strong>{{format-currency housePrice}}</strong>
+    </h3>
+    <h8 class="header col s12 light grey-text text-lighten-5">
+      Based on national average <strong>{{percentRate}}%</strong> 15 year fixed rate mortgage
+    </h8>
+  </div>
+</div>

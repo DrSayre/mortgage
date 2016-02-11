@@ -1,0 +1,30 @@
+@import 'materialize';
+@import 'ember-cli-materialize';
+.input-field input[type=text]:focus + label {
+  color: orange;
+  font-size: 18px;
+}
+
+.input-field input[type=text] {
+  border-bottom: 1px solid white;
+  box-shadow: 0 1px 0 0 white;
+}
+
+.input-field input[type=text].valid {
+  border-bottom: 1px solid white;
+  box-shadow: 0 1px 0 0 white;
+  font-size: 18px;
+}
+
+.input-field label {
+  color: white;
+  font-size: 18px;
+}
+
+.caret {
+  color: white !important;
+}
+
+.input-field .prefix.active {
+  color: white;
+}
